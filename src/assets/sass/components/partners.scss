@@ -1,0 +1,119 @@
+.partners {
+	@extend %padding;
+	@extend %v-padding;
+
+	background-color: #fff;
+
+	&__header {
+		margin: 20px auto;
+
+		font-family: $ff_header;
+		font-size: $fz2;
+		font-weight: bold;
+		line-height: $base-lh * 2;
+		color: $c_text;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__slider-wrap {
+		position: relative;
+	}
+
+	&__link_1, 
+	&__link_2, 
+	&__link_3, 
+	&__link_4, 
+	&__link_5, 
+	&__link_6, 
+	&__link_7, 
+	&__link_8, {
+		display: block;
+
+		width: 170px;
+		height: 121px;
+		margin: 0 auto;
+		 
+		background-repeat: no-repeat;
+
+		transition: .3s;
+	}
+
+	&__link_1 {
+		background-image: url( '/img/partner_1.png' );
+		&:hover { background-image: url( '/img/partner_1_hover.png' ); }
+	}
+
+	&__link_2 {
+		background-image: url( '/img/partner_2.png' );
+		&:hover { background-image: url( '/img/partner_2_hover.png' ); }
+	}
+
+	&__link_3 {
+		background-image: url( '/img/partner_3.png' );
+		&:hover { background-image: url( '/img/partner_3_hover.png' ); }
+	}
+
+	&__link_4 {
+		background-image: url( '/img/partner_4.png' );
+		&:hover { background-image: url( '/img/partner_4_hover.png' ); }
+	}
+
+	&__link_5 {
+		background-image: url( '/img/partner_5.png' );
+		&:hover { background-image: url( '/img/partner_5_hover.png' ); }
+	}
+
+	&__link_6 {
+		background-image: url( '/img/partner_6.png' );
+		&:hover { background-image: url( '/img/partner_6_hover.png' ); }
+	}
+
+	&__link_7 {
+		background-image: url( '/img/partner_7.png' );
+		&:hover { background-image: url( '/img/partner_7_hover.png' ); }
+	}
+
+	&__link_8 {
+		background-image: url( '/img/partner_8.png' );
+		&:hover { background-image: url( '/img/partner_8_hover.png' ); }
+	}
+
+	&__slide-prev, &__slide-next {
+		position: absolute;
+		top: 0;
+		z-index: 1;
+
+		display: block;
+		width: 40px;
+		height: 121px;
+
+		font-size: 45px;
+		line-height: 121px;
+		color: #fff;
+		text-align: center;
+
+		background-color: $c_top_line;
+		opacity: .1;
+
+		transition: .3s;
+
+		&:hover  {
+			color: #fff;
+			background-color: $c_logo;
+			opacity: 1;
+		}
+	}
+
+	&__slide-prev {
+		left: 0;
+	}
+
+	&__slide-next {
+		right: 0;
+	}
+
+	&__slide-icon {
+		vertical-align: middle;
+	}
+}

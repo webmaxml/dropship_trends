@@ -1,0 +1,97 @@
+.integration {
+	@extend %padding;
+	@extend %v-padding;
+
+	background-color: $c_api_section;
+
+	&__header {
+		margin-top: 20px;
+
+		font-family: $ff_header;
+		font-size: $fz2;
+		font-weight: bold;
+		line-height: $base-lh * 2;
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__wrap {
+		@extend %rwfss;
+
+		width: 100%;
+		margin: 0 auto;
+
+		@media only screen and ( min-width: 768px ) {
+			width: 80%;
+		}
+	}
+
+	&__img-wrap {
+		@extend %rncc;
+
+		width: 100%;
+
+		@media only screen and ( min-width: 1000px ) {
+			width: 50%;
+		}
+	}
+
+	&__img {
+		max-width: 100%;
+		max-height: 100%;
+
+		@media only screen and ( min-width: 540px ) {
+			width: 500px;
+			height: 500px;
+		}
+	}
+
+	&__text-wrap {
+		width: 100%;
+
+		@media only screen and ( min-width: 1000px ) {
+			width: 50%;
+			padding-top: 95px;
+		}
+	}
+
+	&__text {
+		font-family: $ff_text;
+		font-size: $fz5;
+		color: #fff;
+		text-align: left;
+	}
+
+	&__link-wrap {
+		@extend %cnfsc;
+	}
+
+	&__link {
+		width: 185px;
+		padding: 10px;
+		border-radius: 10px;
+		margin: 48px 0;
+
+		font-family: $ff_header;
+		font-size: $fz4;
+		line-height: $base-lh * 1.5;
+		color: #fff;
+		text-align: center;
+
+		background-color: $c_top_line;
+
+		transition: .3s;
+
+		&:hover, &:focus, &:active {
+			color: #fff;
+			background-color: $c_logo;
+		}
+	}
+
+	&__box-img {
+		width: 100px;
+		height: 81px;
+		margin-bottom: 20px;
+	}
+}

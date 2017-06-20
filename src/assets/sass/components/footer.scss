@@ -1,0 +1,13 @@
+.footer {
+	@extend %padding;
+	@extend %v-padding;
+
+	background-color: $c_text;
+
+	&__owner {
+		font-family: $ff_header;
+		font-size: $fz5;
+		color: #fff;
+		text-align: center;
+	}
+}

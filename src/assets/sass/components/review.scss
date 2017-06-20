@@ -1,0 +1,60 @@
+.review {
+	@extend %padding;
+	@extend %v-padding;
+
+	background-color: $c_text;
+
+	&__header1 {
+		margin-top: 20px;
+
+		font-family: $ff_header;
+		font-size: $fz2;
+		font-weight: bold;
+		line-height: $base-lh * 2;
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__header2 {
+		margin-bottom: 40px;
+
+		font-family: $ff_header;
+		font-size: $fz4;
+		line-height: $base-lh;
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__video-wrap {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	&__link-wrap {
+		@extend %rncs;
+	}
+
+	&__link {
+		width: 185px;
+		padding: 10px;
+		border-radius: 10px;
+		margin: 40px 0;
+
+		font-family: $ff_header;
+		font-size: $fz4;
+		line-height: $base-lh * 1.5;
+		color: #fff;
+		text-align: center;
+
+		background-color: $c_top_line;
+
+		transition: .3s;
+
+		&:hover, &:focus, &:active {
+			color: #fff;
+			background-color: $c_logo;
+		}
+	}
+}

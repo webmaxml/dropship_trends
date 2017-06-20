@@ -1,0 +1,165 @@
+.contacts{
+	@extend %padding;
+	@extend %rnfss;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+
+	background-color: $c_api_section;
+
+	@media only screen and ( min-width: 880px ) {
+		flex-flow: row nowrap;
+	}
+
+	&__header {
+		margin: 20px 0;
+
+		font-family: $ff_header;
+		font-size: $fz3;
+		font-weight: bold;
+		line-height: $base-lh * 2;
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__info-wrap {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	&__info-list {
+		padding-left: 20px;
+	}
+
+	&__info-item {
+		text-align: left;
+	}
+
+	&__info-link {
+		font-family: $ff_header;
+		font-size: $fz5;
+		line-height: $base-lh * 1.5;
+		color: #fff;
+
+		transition: .3s;
+
+		&:hover, &:focus, &:active {
+			color: $c_text;
+		}
+	}
+
+	&__map-wrap {
+		@extend %rnfss;
+
+		width: 100%;
+	}
+
+	&__cats-wrap {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	&__cats-list {
+		padding-left: 20px;
+	}
+
+	&__cats-item {
+		text-align: left;
+	}
+
+	&__cats-link {
+		font-family: $ff_header;
+		font-size: $fz5;
+		line-height: $base-lh * 1.5;
+		color: #fff;
+
+		transition: .3s;
+
+		&:hover, &:focus, &:active {
+			color: $c_text;
+		}
+	}
+
+	&__contact-wrap {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	&__contact-list {
+		padding-left: 20px;
+	}
+
+	&__contact-item {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-items: stretch;
+	}
+
+	&__contact-icon-wrap {
+		@extend %rncs;
+
+		width: 20px;
+		margin-right: 10px;
+	}
+
+	&__contact-icon {
+		font-size: $fz5;
+		line-height: $base-lh * 1.5;
+		color: $c_text;
+	}
+
+	&__contact-text {
+		font-family: $ff_header;
+		font-size: $fz5;
+		line-height: $base-lh * 1.5;
+		color: #fff;
+	}
+
+	&__contact-link {
+		font-family: $ff_header;
+		font-size: $fz5;
+		line-height: $base-lh * 1.5;
+		color: #fff;
+
+		transition: .3s;
+
+		&:hover, &:focus, &:active {
+			color: $c_text;
+		}
+	}
+
+	&__frame {
+		width: 100%;
+		height: 400px;
+	}
+
+	&__question-wrap {
+		@extend %rncs;
+	}
+
+	&__question-link {
+		width: 190px;
+		padding: 10px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border-radius: 10px;
+
+		font-family: $ff_header;
+		font-size: $fz4;
+		line-height: $base-lh * 1.5;
+		color: #fff;
+		text-align: center;
+
+		background-color: $c_top_line;
+
+		transition: .3s;
+
+		&:hover, &:focus, &:active {
+			color: #fff;
+			background-color: $c_logo;
+		}
+	}
+}

@@ -1,0 +1,113 @@
+.user-review {
+	@extend %padding;
+	@extend %v-padding;
+
+	background-color: #fff;
+
+	&__header {
+		margin: 20px auto;
+
+		font-family: $ff_header;
+		font-size: $fz2;
+		font-weight: bold;
+		line-height: $base-lh * 2;
+		color: $c_text;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__content-wrap {
+		@extend %rwfss;
+
+		width: 100%;
+		margin: 0 auto;
+
+		@media only screen and ( min-width: 768px ) {
+			width: 80%;
+		}
+	}
+
+	&__slider-wrap {
+		width: 100%;
+
+		@media only screen and ( min-width: 768px ) {
+			width: 50%;
+		}
+	}
+
+	&__list {
+		
+	}
+
+	&__item {
+		padding: 20px;
+	}
+
+	&__item-text {
+		max-height: $base-lh * 13;
+		margin-bottom: $base-lh * 2;
+		overflow: hidden;
+
+		font-family: $ff_text;
+		font-size: $fz5;
+		line-height: $base-lh;
+		color: $c_text;
+		text-align: left;
+	}
+
+	&__author {
+		font-family: $ff_text;
+		font-weight: bold;
+		font-size: $fz5;
+		line-height: $base-lh;
+		color: $c_text;
+		text-align: center;
+	}
+
+	&__img-wrap {
+		@extend %rncfe;
+
+		width: 100%;
+		margin-bottom: -20px;
+		margin-top: 30px;
+
+		@media only screen and ( min-width: 768px ) {
+			width: 50%;
+			margin-top: 0;
+		}
+	}
+
+	&__img {
+		width: 284px;
+		height: 434px;
+	}
+
+	& .slick-dots {
+		@extend %rncs;
+
+		padding: 10px 0;
+	}
+
+	& .slick-dots li {
+		margin: 0 10px 
+	}
+
+	& .slick-dots li button {
+		display: block;
+		width: 15px;
+		height: 15px;
+
+		border-radius: 100%;
+
+		font-size: 0;
+		line-height: 0;
+
+		background-color: $c_top_line;
+
+		transition: .3s;
+	}
+
+	& .slick-dots li.slick-active button {
+		background-color: $c_logo;
+	}
+}

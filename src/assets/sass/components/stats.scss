@@ -1,0 +1,62 @@
+.stats {
+	@extend %padding;
+	@extend %v-padding;
+
+	background-color: #fff;
+
+	&__item-list {
+		@extend %rwsbs;
+
+		width: 100%;
+		margin: 0 auto;
+
+		@media only screen and ( min-width: 768px ) {
+			width: 80%;
+		}
+	}
+
+	&__item {
+		width: 100%;
+		margin-bottom: 20px;
+
+		@media only screen and ( min-width: 480px ) {
+			width: 50%;
+		}
+
+		@media only screen and ( min-width: 768px ) {
+			width: 25%;
+			margin-bottom: 0;
+		}
+	}
+
+	&__header {
+		margin-bottom: 20px;
+
+		font-family: $ff_header;
+		font-size: $fz4;
+		font-weight: bold;
+		line-height: $base-lh;
+		color: $c_text;
+		text-align: center;
+	}
+
+	&__value-wrap{
+		@extend %rncs;
+	}
+
+	&__img {
+		width: 40px;
+		height: 40px;
+	}
+
+	&__value {
+		margin-left: 20px;
+
+		font-family: $ff_header;
+		font-size: $fz2;
+		font-weight: bold;
+		line-height: 40px;
+		color: $c_text;
+		text-align: left;
+	}
+}

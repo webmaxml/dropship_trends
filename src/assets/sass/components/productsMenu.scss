@@ -1,0 +1,41 @@
+.products-menu {
+	@extend %padding;
+
+	background-color: $c_logo;
+
+	body.product-page & {
+		margin-top: 60px;
+	}
+
+	&__nav-list {
+		@extend %rwcc;
+
+		margin: 0 auto;
+	}	
+
+	&__nav-item {
+		width: 100%;
+
+		@media only screen and ( min-width: 768px ) {
+			width: auto;
+		}
+	}
+
+	&__nav-link {
+		display: block;
+		padding: 0 20px;
+
+		font-family: $ff_header;
+		font-size: $fz5;
+		line-height: $base-lh * 3;
+		color: #fff;
+		text-align: center;
+
+		transition: .3s;
+
+		&:hover, &:focus, &:active {
+			color: #fff;
+			background-color: $c_text;
+		}
+	}
+}

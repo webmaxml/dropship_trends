@@ -1,0 +1,88 @@
+.header {
+	@extend %rwcc;
+
+	width: 100%;
+	height: 100vh;
+
+	body.products-page & {
+		margin-bottom: -$base-lh * 3;
+	}
+
+	&__wrap {
+
+	}
+
+	&__info {
+		padding: 30px;
+		border-radius: 10px;
+
+		font-family: $ff_header;
+		font-size: $fz3;
+		font-weight: bold;
+		line-height: $base-lh * 2;
+		color: #fff;
+		text-align: center;
+
+		@media only screen and ( min-width: 480px ) {
+			font-size: $fz2;
+			line-height: $base-lh * 2;
+		}
+
+		@media only screen and ( min-width: 768px ) {
+			font-size: $fz1;
+		}
+	}
+
+	&__info-small {
+		margin: 0 auto $base-lh * 2 auto;
+
+		font-family: $ff_header;
+		font-size: $fz5;
+		line-height: $base-lh;
+		color: #fff;
+		text-align: center;
+
+		@media only screen and ( min-width: 480px ) {
+			width: 80%;
+		}
+
+		@media only screen and ( min-width: 768px ) {
+			width: 60%;
+		}
+	}
+
+	&__link-wrap {
+		@extend %rwcc;
+
+		width: 100%;
+	}
+
+	&__link {
+		width: 175px;
+		padding: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border-radius: 10px;
+
+		font-family: $ff_header;
+		font-size: $fz4;
+		line-height: $base-lh * 1.5;
+		color: #fff;
+		text-align: center;
+
+		background-color: $c_top_line;
+
+		transition: .3s;
+
+		&:hover, &:focus, &:active {
+			color: #fff;
+			background-color: $c_logo;
+		}
+
+		&--vendors {
+			width: 190px;
+		}
+	}
+}

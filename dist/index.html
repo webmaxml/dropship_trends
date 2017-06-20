@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AllTrends - дропшиппинг платформа</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="/style.min.css"> -->
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body class="main">
+	<div class="container-fluid">
+
+		<!-- BEGIN HEADER -->
+		<header class="header">
+			<div class="header__wrap">
+				<p class="header__info">Дропшиппинг платформа<br>Лучшее решение для заработка в интернете</p>
+				<div class="header__link-wrap">
+					<a href="javascript:void(0)" class="header__link" data-modal-trigger="login">Вход</a>
+					<a href="javascript:void(0)" class="header__link" data-modal-trigger="registration">Регистрация</a>
+				</div>
+			</div>
+		</header>
+		<!-- END HEADER -->
+
+		<!-- BEGIN TOP-MENU --> 
+		<nav class="top-menu">
+			<a href="/" class="top-menu__logo">
+				All<strong class="top-menu__logo-accent">Trends</strong>.biz
+			</a>
+			<ul class="top-menu__nav">
+				<li class="top-menu__nav-item">
+					<a href="/" class="top-menu__link">Главная</a>
+				</li>
+				<li class="top-menu__nav-item">
+					<a href="/products.html" class="top-menu__link">Товары</a>
+				</li>
+				<li class="top-menu__nav-item">
+					<a href="/vendors.html" class="top-menu__link">Поставшикам</a>
+				</li>
+				<li class="top-menu__nav-item">
+					<a href="javascript:void(0)" class="top-menu__link contacts-trigger">Контакты</a>
+				</li>
+			</ul>
+			<button class="top-menu__mobile-toggle" type="button" data-modal-trigger="mobile">
+				<i class="fa fa-bars top-menu__mobile-icon"></i>
+			</button>
+		</nav>
+		<!-- END TOP-MENU --> 
+
+		<!-- BEGIN ABOUT -->
+		<section class="about">
+			<h1 class="about__header">Наши особенности</h1>
+			<ul class="about__item-list">
+				<li class="about__item wow bounceInLeft">
+					<div class="about__img-wrap">
+						<img src="img/about_1.png" alt="без затрат">
+					</div>
+					<h2 class="about__item-header">Без затрат</h2>
+					<p class="about__text">Данный вид бизнеса практически не требует начального капитала, следовательно, вы не несёте никаких рисков</p>
+				</li>
+				<li class="about__item wow bounceInLeft">
+					<div class="about__img-wrap">
+						<img src="img/about_2.png" alt="Популярные офферы">
+					</div>
+					<h2 class="about__item-header">Популярные офферы</h2>
+					<p class="about__text">Представлены самые популярные товары, которые продаются через одностраничные сайты</p>
+				</li>
+				<li class="about__item wow bounceInLeft">
+					<div class="about__img-wrap">
+						<img src="img/about_3.png" alt="Удобный кабинет">
+					</div>
+					<h2 class="about__item-header">Удобный кабинет</h2>
+					<p class="about__text">Удобный личный кабинет с перечнем клиентов и автоматический подсчет баланса</p>
+				</li>
+				<li class="about__item wow bounceInRight">
+					<div class="about__img-wrap">
+						<img src="img/about_4.png" alt="Личный менеджер">
+					</div>
+					<h2 class="about__item-header">Личный менеджер</h2>
+					<p class="about__text">По любому вопросу Вам поможет личный менеджер или техподдержка</p>
+				</li>
+				<li class="about__item wow bounceInRight">
+					<div class="about__img-wrap">
+						<img src="img/about_5.png" alt="Быстрая доставка">
+					</div>
+					<h2 class="about__item-header">Быстрая доставка</h2>
+					<p class="about__text">Доставка товара Вашему клиенту отправляется день в день. Из-за этого увеличиваются выкупы</p>
+				</li>
+				<li class="about__item wow bounceInRight">
+					<div class="about__img-wrap">
+						<img src="img/about_6.png" alt="Надежное сотрудничество">
+					</div>
+					<h2 class="about__item-header">Надежное сотрудничество</h2>
+					<p class="about__text">Работаем с партнерами со всех стран. Выплаты происходят еженедельно на карту, webmoney, яндекс деньги</p>
+				</li>
+			</ul>
+		</section>
+		<!-- END ABOUT -->
+		
+		<!-- BEGIN HOW-WORKS -->
+		<section class="how-works">
+			<h1 class="how-works__header">Как это работает</h1>
+			<ul class="how-works__item-list">
+				<li class="how-works__item wow bounceInUp">
+					<div class="how-works__img-wrap">
+						<img class="how-works__img" src="img/how_1.png" alt="Регистрация">
+						<img class="how-works__arrow" src="img/how_arrow.png" alt="стрелка">
+					</div>
+					<h2 class="how-works__item-header">Регистрация</h2>
+					<p class="how-works__item-text">Для начала работы Вам нужно зарегистрироваться в ДропПлатформе и начать рекламировать товар</p>
+				</li>
+				<li class="how-works__item wow bounceInUp">
+					<div class="how-works__img-wrap">
+						<img class="how-works__img" src="img/how_2.png" alt="Добавление заказа">
+						<img class="how-works__arrow" src="img/how_arrow.png" alt="стрелка">
+					</div>
+					<h2 class="how-works__item-header">Добавление заказа</h2>
+					<p class="how-works__item-text">В личном кабинете добавляете заказы вручную или по API/CPA. Обзвон клиентов на нашей стороне только по модели CPA</p>
+				</li>
+				<li class="how-works__item wow bounceInUp">
+					<div class="how-works__img-wrap">
+						<img class="how-works__img" src="img/how_3.png" alt="Отправка товара">
+						<img class="how-works__arrow" src="img/how_arrow.png" alt="стрелка">
+					</div>
+					<h2 class="how-works__item-header">Отправка товара</h2>
+					<p class="how-works__item-text">Мы отправляем клиенту заказ и SMS-уведомление. Вы можете следить за перемещением посылки с личного кабинета</p>
+				</li>
+				<li class="how-works__item wow bounceInUp">
+					<div class="how-works__img-wrap">
+						<img class="how-works__img" src="img/how_4.png" alt="Клиент получает товар">
+						<img class="how-works__arrow" src="img/how_arrow.png" alt="стрелка">
+					</div>
+					<h2 class="how-works__item-header">Клиент получает товар</h2>
+					<p class="how-works__item-text">Когда клиент забирает товар с почты, Вам начисляется вознаграждение в ДропПлатформе в ЛК</p>
+				</li>
+				<li class="how-works__item wow bounceInUp">
+					<div class="how-works__img-wrap">
+						<img class="how-works__img" src="img/how_5.png" alt="Профит">
+					</div>
+					<h2 class="how-works__item-header">Профит</h2>
+					<p class="how-works__item-text">Каждую Сб и Пн выплачиваем Вам вознаграждение</p>
+				</li>
+			</ul>
+		</section>
+		<!-- END HOW-WORKS -->
+
+		<!-- BEGIN INTEGRATION -->
+		<section class="integration">
+			<h1 class="integration__header">Интеграция по API</h1>
+			<div class="integration__wrap">
+				<div class="integration__img-wrap">
+					<img class="integration__img  wow fadeInLeft" src="img/integration.jpg" alt="Интеграция">
+				</div>
+				<div class="integration__text-wrap">
+					<p class="integration__text">Теперь все Ваши заказы будут заходит с сайтов прямо в ДропПлатформу. Простая интеграция, которую Вы сможете сами сделать. Также Вы видите все передвижения Вашего заказа. И автоматический подсчет баланса</p>
+					<div class="integration__link-wrap">
+						<a class="integration__link" href="#">Вход в кабинет</a>
+						<img class="integration__box-img" src="img/box.png" alt="Интеграция">
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		<!-- END INTEGRATION -->
+
+		<!-- BEGIN STATS -->
+		<section class="stats">
+			<ul class="stats__item-list">
+				<li class="stats__item">
+					<h2 class="stats__header">Офферов в наличии</h2>
+					<div class="stats__value-wrap">
+						<img class="stats__img" src="img/stat_1.png" alt="Офферов в наличии">
+						<span class="stats__value">200</span>
+					</div>
+				</li>
+				<li class="stats__item">
+					<h2 class="stats__header">Партнеров</h2>
+					<div class="stats__value-wrap">
+						<img class="stats__img" src="img/stat_2.png" alt="Партнеров">
+						<span class="stats__value">2498</span>
+					</div>
+				</li>
+				<li class="stats__item">
+					<h2 class="stats__header">Отправлений в месяц</h2>
+					<div class="stats__value-wrap">
+						<img class="stats__img" src="img/stat_3.png" alt="Отправлений в месяц">
+						<span class="stats__value">4418</span>
+					</div>
+				</li>
+				<li class="stats__item">
+					<h2 class="stats__header">Довольных клиентов</h2>
+					<div class="stats__value-wrap">
+						<img class="stats__img" src="img/stat_4.png" alt="Довольных клиентов">
+						<span class="stats__value">95432</span>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<!-- END STATS -->
+
+		<!-- BEGIN DONT-MISS -->
+		<section class="dont-miss">
+			<div class="dont-miss__content">
+				<p class="dont-miss__text">Не упустите возможность открыть свой мегаприбыльный
+интернет-бизнес с минимальными вложениями!</p>
+				<div class="dont-miss__link-wrap">
+					<a href="#" class="dont-miss__link wow fadeInRight">Вход в кабинет</a>
+				</div>
+			</div>
+		</section>
+		<!-- END DONT-MISS -->
+
+		<!-- BEGIN REVIEW -->
+		<section class="review">
+			<h1 class="review__header1">Сделай правильный выбор</h1>
+			<h2 class="review__header2">Твой надежный партнер по Дропшиппингу</h2>
+			<div class="review__video-wrap">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3rZGX-te624"></iframe>
+				</div>
+			</div>
+			<div class="review__link-wrap">
+				<a href="#" class="review__link wow fadeInRight">Вход в кабинет</a>
+			</div>
+		</section>
+		<!-- END REVIEW -->
+
+		<!-- BEGIN PARTNERS -->
+		<section class="partners">
+			<h1 class="partners__header">Наши партнеры</h1>
+			<div class="partners__slider-wrap">
+				<button type="button" class="partners__slide-prev">
+					<i class="fa fa-angle-left parnters__slide-icon"></i>
+				</button>
+				<ul class="partners__list">
+					<li class="partners__item">
+						<a href="#" class="partners__link_1"></a>
+					</li>
+					<li class="partners__item">
+						<a href="#" class="partners__link_2"></a>
+					</li>
+					<li class="partners__item">
+						<a href="#" class="partners__link_3"></a>
+					</li>
+					<li class="partners__item">
+						<a href="#" class="partners__link_4"></a>
+					</li>
+					<li class="partners__item">
+						<a href="#" class="partners__link_5"></a>
+					</li>
+					<li class="partners__item">
+						<a href="#" class="partners__link_6"></a>
+					</li>
+					<li class="partners__item">
+						<a href="#" class="partners__link_7"></a>
+					</li>
+					<li class="partners__item">
+						<a href="#" class="partners__link_8"></a>
+					</li>
+				</ul>
+				<button type="button" class="partners__slide-next">
+					<i class="fa fa-angle-right parnters__slide-icon"></i>
+				</button>
+			</div>
+		</section>
+		<!-- END PARTNERS -->
+
+		<!-- BEGIN DONT-MISS-2 -->
+		<section class="dont-miss-2">
+			<div class="dont-miss-2__content">
+				<p class="dont-miss-2__text">Вы еще думаете? Другие уже зарабатывают!</p>
+				<div class="dont-miss-2__link-wrap">
+					<a href="#" class="dont-miss-2__link wow fadeInRight">Вход в кабинет</a>
+				</div>
+			</div>
+		</section>
+		<!-- END DONT-MISS-2 -->
+
+		<!-- BEGIN USER-REVIEW -->
+		<section class="user-review">
+			<h1 class="user-review__header">Отзывы</h1>
+			<div class="user-review__content-wrap">
+				<div class="user-review__slider-wrap">
+					<ul class="user-review__list">
+						<li class="user-review__item">
+							<p class="user-review__item-text">Андрей, цена на 8м - 320 грн, я сам его рекламирую, по моему нормальная маржа ) С Ириной тоже не согласен - работаю по дропу с ними уже 4 месяца, из тех фирм что находил, достаточно товаров по приемлемой цене, на некоторые часы по 200грн ставлю наценку и цена получается конкурентная. Моя оценка на твердую пять и по товарам/ценам и по поддержке от менеджеров и выплатам. Если бы еще сделали выплаты 2 раза в неделю - просто супер было бы!</p>
+							<p class="user-review__author">Владимир Харьковский</p>
+						</li>
+						<li class="user-review__item">
+							<p class="user-review__item-text">В целом работает хорошо. Есть много недоработок в плане функционала, но надеюсь их будут со временем исправлять. На рынке(в интернете) это новинка. Деньги зарабатывать дает возможность и это хорошо. Очень нахватает оперативного изменения информации, хотя бы в течении суток о наличии того или иного товара - так как звонит клиент и спрашивает о наличии, а нам нужно писать или звонить. Менеджер - это тоже человек, его ответ имеет опред. задержку. Было бы еще интересно ввести партнерскую программу или что-то подобное. В интернете есть другие дропшипперы с более выгодными условиями, но никто из них не предоставляет такой сервис(платформа) и поддержку(менеджеры) своих партнеров как вы. В целом нравится.</p>
+							<p class="user-review__author">магазин Shoppy Land</p>
+						</li>
+						<li class="user-review__item">
+							<p class="user-review__item-text">Здравствуйте, меня зовут Иван. Работаю с данной платформой около 3-ох месяцев. Сам живу во Львове, но продаю без собственных товаров и без собственного склада. О данной платформе рассказал знакомый. Всё нравится и товар всегда в наличии. Буду сотрудничать в дальнейшем. Надеюсь на новые поступления.</p>
+							<p class="user-review__author">Іван Гелетій</p>
+						</li>
+					</ul>
+				</div>
+				<div class="user-review__img-wrap">
+					<img class="user-review__img  wow fadeInRight" src="img/businessman.png" alt="Отзывы пользователей">
+				</div>
+			</div>
+		</section>
+		<!-- END USER-REVIEW -->
+
+		<!-- BEGIN CONTACTS -->
+		<section class="contacts">
+			<div class="contacts__info-wrap">
+				<h2 class="contacts__header">Информация</h2>
+				<ul class="contacts__info-list">
+					<li class="contacts__info-item">
+						<a class="contacts__info-link" href="javascipt:void(0)" data-modal-trigger="registration">Регистрация</a>
+					</li>
+					<li class="contacts__info-item">
+						<a class="contacts__info-link" href="javascipt:void(0)" data-modal-trigger="login">Личный Кабинет</a>
+					</li>
+					<li class="contacts__info-item">
+						<a class="contacts__info-link" href="/products.html">Каталог товаров</a>
+					</li>
+					<li class="contacts__info-item">
+						<a class="contacts__info-link" href="/vendors.html">Поставщикам</a>
+					</li>
+					<li class="contacts__info-item">
+						<a class="contacts__info-link" href="#">ОПТ</a>
+					</li>
+					<li class="contacts__info-item">
+						<a class="contacts__info-link" href="#">Политика конфиденциальности</a>
+					</li>
+					<li class="contacts__info-item">
+						<a class="contacts__info-link" href="#">Пользовательское соглашение</a>
+					</li>
+				</ul>
+			</div>
+			<div class="contacts__map-wrap">
+				<iframe
+				  class="contacts__frame"
+				  frameborder="0" style="border:0"
+				  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBz7QPqyaDSrHi472FFWLoINPQy7S7BpP0
+				    &q=place_id:ChIJBUVa4U7P1EAR_kYBF9IxSXY" allowfullscreen>
+				</iframe>
+			</div>
+			<div class="contacts__contact-wrap">
+				<h2 class="contacts__header">Связаться с нами</h2>
+				<ul class="contacts__contact-list">
+					<li class="contacts__contact-item">
+						<span class="contacts__contact-icon-wrap">
+							<i class="fa fa-map-marker contacts__contact-icon"></i>
+						</span>
+						<span class="contacts__contact-text">Украина, г. Кривой Рог, ул. Мелешкина 5, офис 9</span>
+					</li>
+					<li class="contacts__contact-item">
+						<span class="contacts__contact-icon-wrap">
+							<i class="fa fa-phone contacts__contact-icon"></i>
+						</span>
+						<span class="contacts__contact-text">+38 (067) 678-18-33</span>
+					</li>
+					<li class="contacts__contact-item">
+						<span class="contacts__contact-icon-wrap">
+							<i class="fa fa-phone contacts__contact-icon"></i>
+						</span>
+						<span class="contacts__contact-text">+38 (095) 233-51-11</span>
+					</li>
+					<li class="contacts__contact-item">
+						<span class="contacts__contact-icon-wrap">
+							<i class="fa fa-envelope contacts__contact-icon"></i>
+						</span>
+						<a href="mailto:support@dropplatforma.ru" class="contacts__contact-link">support@dropplatforma.ru</a>
+					</li>
+					<li class="contacts__contact-item">
+						<span class="contacts__contact-icon-wrap">
+							<i class="fa fa-skype contacts__contact-icon"></i>
+						</span>
+						<a href="#" class="contacts__contact-link">dropshipping-nadya</a>
+					</li>
+				</ul>
+				<div class="contacts__question-wrap">
+					<a href="javascript:void(0)" class="contacts__question-link" data-modal-trigger="support">Задать вопрос</a>
+				</div>
+			</div>
+		</section>
+		<!-- END CONTACTS -->
+
+		<!-- BEGIN FOOTER -->
+		<footer class="footer">
+			<p class="footer__owner">СПД Луценко А.В. ИНН 3285111434</p>
+		</footer>
+		<!-- END FOOTER -->
+
+	</div>
+
+	<!-- BEGIN MODALS -->
+	<section class="modals">
+		<div class="mobile-menu mobile-menu__overlay">
+			<div class="mobile-menu__container">
+				<button class="mobile-menu__close-btn">
+					<i class="fa fa-close mobile-menu__close-icon"></i>
+				</button>
+				<ul class="mobile-menu__nav-list">
+					<li class="mobile-menu__nav-item">
+						<a href="/" class="mobile-menu__nav-link">Главная</a>
+					</li>
+					<li class="mobile-menu__nav-item">
+						<a href="/products.html" class="mobile-menu__nav-link">Товары</a>
+					</li>
+					<li class="mobile-menu__nav-item">
+						<a href="/vendors.html" class="mobile-menu__nav-link">Поставшикам</a>
+					</li>
+					<li class="mobile-menu__nav-item">
+						<a href="#" class="mobile-menu__nav-link contacts-trigger">Контакты</a>
+					</li>
+				</ul>
+			</div>	
+		</div>
+		<div class="registration modals__overlay" data-modal-item="registration">
+			<div class="modals__content">
+				<button class="modals__close-btn">
+					<i class="fa fa-close modals__close-icon"></i>
+				</button>
+				<div class="modals__header">Регистрация</div>
+				<form action="/" method="post" class="registration__form">
+					<div class="registration__input-wrap">
+						<input type="text" name="login" class="registration__input" placeholder="Ваш логин">
+					</div>
+					<div class="registration__input-wrap">
+						<input type="email" name="email" class="registration__input" placeholder="Ваш email">
+					</div>
+					<div class="registration__input-wrap">
+						<input type="text" name="phone" class="registration__input" placeholder="Ваш телефон">
+					</div>
+					<div class="registration__input-wrap">
+						<input id="regPwd" type="password" name="pwd" class="registration__input" placeholder="Пароль">
+					</div>
+					<div class="registration__input-wrap">
+						<input type="password" name="pwd_repeat" class="registration__input" placeholder="Подтверждение пароля">
+					</div>
+					<ul id="regErrorContainer" class="registration__error-container"></ul>
+					<div class="registration__captcha-wrap">
+						<div class="g-recaptcha registration__captcha" data-sitekey="6LcDAiMUAAAAAKESqAtvejFRsL1ZzpuX1JicBzwf"></div>
+					</div>
+					<div class="registration__submit-wrap">
+						<button class="registration__submit">Зарегистрироваться</button>
+					</div>
+					<div class="registration__link-wrap">
+						<a href="javascript:void(0)" class="registration__link" data-modal-trigger="login">У меня уже есть аккаунт</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="login modals__overlay" data-modal-item="login">
+			<div class="modals__content">
+				<button class="modals__close-btn">
+					<i class="fa fa-close modals__close-icon"></i>
+				</button>
+				<div class="modals__header">Вход</div>
+				<form action="/" method="post" class="login__form">
+					<div class="login__input-wrap">
+						<input type="text" name="login" class="login__input" placeholder="Ваш логин">
+					</div>
+					<div class="login__input-wrap">
+						<input type="password" name="pwd" class="login__input" placeholder="Пароль">
+					</div>
+					<div class="login__input-wrap">
+						<input id="loginRemember" type="checkbox" name="remember" class="login__checkbox">
+						<label for="loginRemember" class="login__remember-label">
+							<div class="login__fake-checkbox">
+								<i class="fa fa-check login__fake-checkbox-icon"></i>
+							</div>
+							<span class="login__label-text">Запомнить меня</span>
+						</label>
+					</div>
+					<ul id="logErrorContainer" class="login__error-container"></ul>
+					<div class="login__submit-wrap">
+						<button class="login__submit">Войти</button>
+					</div>
+					<div class="login__link-wrap">
+						<a href="javascript:void(0)" class="login__link" data-modal-trigger="registration">Регистрация</a>
+						<a href="javascript:void(0)" class="login__link">Забыли пароль?</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="support modals__overlay" data-modal-item="support">
+			<div class="modals__content">
+				<button class="modals__close-btn">
+					<i class="fa fa-close modals__close-icon"></i>
+				</button>
+				<div class="modals__header">Задать вопрос</div>
+				<form action="/" method="post" class="support__form">
+					<div class="support__input-wrap">
+						<input type="text" name="name" class="support__input" placeholder="Ваше имя*">
+					</div>
+					<div class="support__input-wrap">
+						<input type="email" name="email" class="support__input" placeholder="Ваш email*">
+					</div>
+					<div class="support__input-wrap">
+						<input type="text" name="phone" class="support__input" placeholder="Ваш телефон">
+					</div>
+					<div class="support__input-wrap">
+						<textarea name="message" class="support__textarea" placeholder="Ваш вопрос*"></textarea>
+					</div>
+					<ul id="supportErrorContainer" class="support__error-container"></ul>
+					<div class="support__submit-wrap">
+						<button class="support__submit">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- END MODALS -->
+	
+	<script src="/libs/jquery-3.2.1.min.js"></script>
+	<script src="/libs/wow.min.js"></script>
+	<script>
+    	new WOW().init();
+    </script>
+	<script src="/app.min.js"></script>
+</body>
+</html>

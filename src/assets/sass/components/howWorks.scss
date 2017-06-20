@@ -1,0 +1,93 @@
+.how-works {
+	@extend %padding;
+	@extend %v-padding;
+
+	background-color: $c_text;
+
+	&__header {
+		margin: 20px auto;
+
+		font-family: $ff_header;
+		font-size: $fz2;
+		font-weight: bold;
+		line-height: $base-lh * 2;
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__item-list {
+		@extend %rwfss;
+
+		width: 100%;
+		margin: 0 auto;
+
+		@media only screen and ( min-width: 768px ) {
+			width: 80%;
+		}
+	}
+
+	&__item {
+		width: 100%;
+		padding: 30px;
+
+		@media only screen and ( min-width: 480px ) {
+			width: 50%;
+		}
+
+		@media only screen and ( min-width: 768px ) {
+			width: 33.333%;
+		}
+
+		@media only screen and ( min-width: 1024px ) {
+			width: 20%;
+		}
+	}
+
+	&__img-wrap {
+		@extend %rncs;
+
+		position: relative;
+	}
+
+	&__arrow {
+		position: absolute;
+		top: 30px;
+		right: -50px;
+		z-index: 1;
+
+		display: none;
+		width: 40px;
+		height: 40px;
+
+		@media only screen and ( min-width: 480px ) {
+			display: block;
+		}
+	}
+
+	&__img {
+		width: 100px;
+		height: 100px;
+	}
+
+	&__item-header {
+		@extend %rwcc;
+
+		height: $base-lh * 2;
+		margin: 20px 0;
+
+		font-family: $ff_header;
+		font-size: $fz5;
+		line-height: $base-lh;
+		font-weight: bold;
+		color: #fff;
+		text-align: center;
+	}
+
+	&__item-text {
+		font-family: $ff_text;
+		font-size: $fz6;
+		color: #fff;
+		text-align: center;
+	}
+}

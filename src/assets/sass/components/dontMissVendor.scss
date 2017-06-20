@@ -1,0 +1,57 @@
+.dont-miss-vendor {
+	@extend %padding;
+	@extend %v-padding;
+
+	&__content {
+
+	}
+
+	&__text {
+		width: 100%;
+		margin: 50px auto;
+		padding: 20px;
+		border-radius: 10px;
+
+		font-family: $ff_header;
+		font-size: $fz3;
+		line-height: $base-lh * 2;
+		color: #fff;
+		text-align: center;
+
+		// background-color: rgba( 10, 10, 10, .5 );
+
+		@media only screen and ( min-width: 480px ) {
+			width: 80%;
+		}
+
+		@media only screen and ( min-width: 768px ) {
+			width: 60%;
+		}
+	}
+
+	&__link-wrap {
+		@extend %rncs;
+	}
+
+	&__link {
+		width: 185px;
+		padding: 10px;
+		border-radius: 10px;
+		margin-bottom: 50px;
+
+		font-family: $ff_header;
+		font-size: $fz4;
+		line-height: $base-lh * 1.5;
+		color: #fff;
+		text-align: center;
+
+		background-color: $c_top_line;
+
+		transition: .3s;
+
+		&:hover, &:focus, &:active {
+			color: #fff;
+			background-color: $c_logo;
+		}
+	}
+}

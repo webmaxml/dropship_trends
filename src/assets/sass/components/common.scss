@@ -1,0 +1,34 @@
+body {
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+body.main {
+	background-image: url( '../img/port.jpg' );
+
+	& .container-fluid {
+		background: rgba( 0, 0, 0, .3 );
+	}
+}
+
+body.products-page {
+	background-image: url( '../img/ship.jpg' );
+}
+
+body.product-page {
+	background: #000;
+}
+
+body.vendors-page {
+	background-image: url( '../img/vendors_header.jpg' );
+
+	& .container-fluid {
+		background: rgba( 0, 0, 0, .5 );
+	}
+
+	@media only screen and ( min-width: 769px ) {
+		background-position: center -60px;
+	}
+}

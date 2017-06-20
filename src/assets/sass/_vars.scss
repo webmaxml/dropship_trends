@@ -1,0 +1,26 @@
+$base-fz: 16px;
+$base-lh: 22px;
+
+// colors
+$c_top_line: rgba( 10, 10, 10, .7 );
+$c_api_section: #6a8c8d; // синеватая 
+$c_accent: #FF9F6A; // оранжевый
+$c_logo: #00CC22; // зеленый 
+$c_logo_8: rgba( 255, 159, 106, .8 ); // оранжевый
+$c_text: #494949; // темно серый
+$c_error: #f0422e; // красный
+ 
+// font family
+$ff_logo: 'linux-biolinum', sans-serif;
+$ff_header: 'Roboto', sans-serif;
+$ff_text: 'Roboto', sans-serif;
+
+// font size
+$fz1: $base-fz * 2.074; // 33px
+$fz2: $base-fz * 1.728; // 28px
+$fz3: $base-fz * 1.44;	// 23px
+$fz4: $base-fz * 1.2;	// 19px
+$fz5: $base-fz;			// 16px
+$fz6: $base-fz * 0.833; // 13px
+$fz7: $base-fz * 0.694;	// 11px
+$fz8: $base-fz * 0.579;	// 9px

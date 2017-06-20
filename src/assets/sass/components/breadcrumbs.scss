@@ -1,0 +1,53 @@
+.breadcrumbs {
+	@extend %padding;
+	@extend %v-padding;
+
+	background-color: #fff;
+
+	&__list {
+		@extend %rnfss;
+		padding-top: $base-lh;
+		padding-left: $base-lh;
+	}
+
+	&__item {
+	}
+
+	&__arrow {
+		margin: 0 10px;
+
+		font-family: 'FontAwesome';
+		font-size: $fz5;
+		line-height: $base-lh;
+		color: $c_accent;
+	}
+
+	&__link, &__link-home {
+		font-family: $ff_header;
+		font-size: $fz5;
+		line-height: $base-lh;
+		color: $c_api_section;
+		text-decoration: underline;
+		
+		&:hover, &:focus, &:active {
+			color: $c_api_section;
+			text-decoration: none;
+		}
+	}
+
+	&__link-home {
+		text-decoration: none;
+	}
+
+	&__text {
+		font-family: $ff_header;
+		font-size: $fz5;
+		line-height: $base-lh;
+		color: $c_text;
+	}
+
+	&__icon {
+		font-family: 'FontAwesome';
+		font-size: $fz4;
+	}
+}
